@@ -1,5 +1,6 @@
 import React from "react";
 import "./SidebarBTN.css";
+import theme from "@/theme";
 
 interface SidebarBTNProps {
     icon: React.ReactNode; // L'SVG passato come attributo
@@ -11,7 +12,7 @@ interface SidebarBTNProps {
 const SidebarBTN: React.FC<SidebarBTNProps> = ({ icon, onClick, className, iconColor }) => {
     return (
         <div className={`sidebar-btn-container ${className}`}>
-            <button onClick={onClick} className="sidebar-btn" style={{ color: iconColor }}>
+            <button onClick={onClick} className="sidebar-btn" style={{ backgroundColor: theme.defaultTheme.secondary }}>
                 {icon}
             </button>
         </div>

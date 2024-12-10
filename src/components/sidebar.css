@@ -1,5 +1,19 @@
-.sidebar-container{
-    background: #526D82;
+.sidebar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin-left: 10px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: auto;
     height: 80vh;
-    width: 3.5rem;
+
+    border-radius: 10px ;
 }

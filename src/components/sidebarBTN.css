@@ -6,13 +6,11 @@
     width: 100%;
 }
 .sidebar-btn {
-    background: #30414E; /* Rende il bottone trasparente */
     border: none; /* Rimuove il bordo */
     cursor: pointer; /* Cambia il cursore al passaggio del mouse */
     padding: 10px; /* Aggiungi padding se necessario */
     outline: none; /* Rimuove il contorno al focus */
     border-radius: 10px;
-    
 }
 .sidebar-btn:hover {
     opacity: 0.7; /* Aggiunge un effetto hover */
