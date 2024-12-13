@@ -4,9 +4,11 @@ import Image from "next/image";
 import Sidebar from "@/components/Sidebar";
 import Topbar from "@/components/Topbar";
 import FileExplorer from "@/components/FileExplorer";
+import WeatherWidget from "@/components/Widget/WeatherWidget";
 
 import DesktopSelection from "@/components/DesktopSelection";
 import { useState } from "react";
+
 
 export default function Home() {
   const [showFileExplorer, setShowFileExplorer] = useState(false);
@@ -52,7 +54,7 @@ export default function Home() {
         <Topbar />
       </div>
 
-      
+
       {showFileExplorer && (
         <div
           style={{
@@ -74,8 +76,18 @@ export default function Home() {
 
       <Sidebar onToggleFileExplorer={function (): void {
         handleToggleFileExplorer();
-      } } />
+      }} />
 
+
+
+      <div style={{
+        position: "absolute", top: 350,
+        right: 50
+      }}>
+        <WeatherWidget />
+
+
+      </div>
 
 
 
