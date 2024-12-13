@@ -17,16 +17,23 @@ import RecycleBin from "@/SVG/RecycleBin";
 import "./sidebar.css";
 
 
-export default function Sidebar() {
+
+
+export default function Sidebar({ onToggleFileExplorer }: { onToggleFileExplorer: () => void }) {
     return (
         <div className="sidebar-wrapper">
             <div className="sidebar-container" style={{ backgroundColor: theme.defaultTheme.primary }}>
                 <SidebarBTN
                     icon={<Phone fillColor={theme.defaultTheme.primary} />}
                 />
+
                 <SidebarBTN
-                    icon={<Folder fillColor={theme.defaultTheme.primary} />}
+                    icon={
+                        <Folder fillColor={theme.defaultTheme.primary} /> // Cambia il colore dell'icona se cliccata
+                        }
                 />
+
+
                 <SidebarBTN
                     icon={<Git fillColor={theme.defaultTheme.primary} />}
                 />
@@ -35,6 +42,7 @@ export default function Sidebar() {
                 />
                 <SidebarBTN
                     icon={<Calendar fillColor={theme.defaultTheme.primary} />}
+                    onClick={onToggleFileExplorer} // Passa la funzione onClick
                 />
                 <SidebarBTN
                     icon={<Book fillColor={theme.defaultTheme.primary} />}
