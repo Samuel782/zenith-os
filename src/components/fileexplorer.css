@@ -1,0 +1,94 @@
+.AppContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #1e1e1eef;
+    width: 60rem;
+    height: 40rem;
+    border-radius: 10px;
+}
+
+.sidebarApp {
+    background-color: #30414e86;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+}
+
+.separator1 {
+    width: 99%;
+    height: 1px;
+    margin-top: 3rem;
+    border-radius: 50%;
+    border-color: #666b6e;
+    box-shadow: 0px 0px 5px 4px #666b6e1f;
+}
+
+.separator2 {
+    width: 100%;
+    height: 1px;
+    margin-top: 1.09rem;
+    border-radius: 10p;
+    border-color: #494c4e;
+    box-shadow: 0px 0px 5px 4px #494c4e1f;
+}
+
+
+.ActiveTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% + 10px); 
+    margin-right: -10px; 
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    background-color: #526D82;
+    overflow: visible; 
+    box-shadow: 0px 0px 5px 4px #526D821f;
+
+    padding-left: 3rem;
+}
+
+.Tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    overflow: visible; 
+    padding-left: 3rem;
+}
+
+.Tab:hover {
+    background-color: #30414e86;
+}
+
+
+.windowControl{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5px;
+    padding-top: 5px;
+    width: 100%;
+    gap: 10px;
+}
+
+.WindowButton:hover {
+    opacity: 0.7;
+}
+    

@@ -5,6 +5,7 @@
     height: 100vh;
     margin-left: 10px;
     z-index: 100;
+    width: auto;
 }
 
 .sidebar-container {
@@ -18,3 +19,4 @@
     height: 80vh;
     border-radius: 10px;
 }
+
