@@ -6,13 +6,14 @@ import Logo from "@/SVG/Logo";
 import Settings from "@/SVG/Settings";
 import Battery from "@/SVG/Battery";
 import Bluetooth from "@/SVG/Bluetooth";
+import Switch from "@/components/Widget/Switch"
 
 
 import "./Topbar.css";
 
 let currentApp = "ZenithOS";
-if(currentApp.length>15){
-    currentApp.slice(0,15);
+if (currentApp.length > 15) {
+    currentApp.slice(0, 15);
 }
 
 
@@ -41,6 +42,9 @@ export default function Sidebar() {
 
                 <div className="right">
 
+                    <div>
+                        <Switch />
+                    </div>
                     <div className="topbar-element">
                         <Bluetooth fillColor="#fff" />
                     </div>
@@ -50,6 +54,7 @@ export default function Sidebar() {
                     <div className="topbar-element">
                         <Settings fillColor="#fff" />
                     </div>
+
                 </div>
             </div>
         </div>
