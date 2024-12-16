@@ -1,5 +1,5 @@
 import React from "react";
-import "./SidebarBTN.css";
+import "./sidebarBTN.css";
 import theme from "@/theme";
 
 interface SidebarBTNProps {

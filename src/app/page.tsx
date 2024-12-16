@@ -82,7 +82,8 @@ export default function Home() {
 
       <div style={{
         position: "absolute", top: 350,
-        right: 50
+        right: 50,
+        zIndex: 1
       }}>
         <WeatherWidget />
 
