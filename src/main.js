@@ -11,7 +11,7 @@ function createWindow() {
   });
 
   win.loadURL('http://localhost:3000'); // Per lo sviluppo
-  // win.loadFile(path.join(__dirname, 'build', 'index.html')); // Quando distribuito
+  //win.loadFile(path.join(__dirname, 'build', 'index.html')); // Quando distribuito
 }
 
 app.whenReady().then(createWindow);
